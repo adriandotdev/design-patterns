@@ -1,6 +1,6 @@
 import IObstacle from "../interfaces/IObstacle";
 
-export default class Asteroid implements IObstacle {
+export default class FireAsteroid implements IObstacle {
 
     speed: number;
     size: number;
@@ -13,7 +13,7 @@ export default class Asteroid implements IObstacle {
         this.speed = speed;
         this.size = size;
         this.damage = damage;
-        this.image = 'SimpleAsteroid.png';
+        this.image = 'FireAsteroid.png';
         this.startXPosition = Math.random() * 10;
         this.startYPosition = Math.random() * 10;
     }
